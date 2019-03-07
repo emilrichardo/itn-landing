@@ -1,0 +1,152 @@
+// mixins /////// 
+@mixin trans-all ($time){
+    -webkit-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+  transition: all $time ease-in-out;
+}
+
+@mixin row-bt{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin row-ct{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin row-ar{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin row-st{
+  display: flex;
+  flex-flow:wrap row;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+@mixin col-ct{
+  display: flex;
+  flex-flow:wrap column;
+  justify-content:center;
+  align-items:center;
+}
+
+@mixin col-end{
+  display: flex;
+  flex-flow:wrap column;
+  justify-content:center;
+  align-items: flex-end;
+}
+@mixin col-st{
+  display: flex;
+  flex-flow:wrap column;
+  justify-content:center;
+  align-items: flex-start;
+}
+
+@mixin center{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+///fonts sizes
+
+$fs1 : 6.28rem; //88px
+$fs2 : 2.28rem; //32px
+$fs3 : 1.57rem; //22px
+$fs4 : 1.28rem; //18px
+$fs5 : 1.14rem; //16px
+$fs6 : 1rem;  //14px
+$fs7 : .85rem;  //12px
+
+h1{
+  font-size: $fs1;
+}
+h2{
+  font-size: $fs2;
+  line-height: 40px;
+}
+h3{
+  font-size: $fs3;
+}
+h4{
+  font-size: $fs4;
+}
+h5{
+  font-size: $fs5;
+}
+h6{
+  font-size: $fs6;
+}
+p{
+  font-size:1.28rem;
+}
+
+///fonts family
+
+$font-default : 'Titillium Web', sans-serif;;
+
+///colors
+$white  :  #ffff;
+$white2 :  #fefefe;
+$gray : #808080;
+$gold :  #d8b021;
+$black  : #000000;
+
+
+
+
+/// buttons
+.btn{
+  font-size: 1.14rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 25px;
+  transition: .2s all ease-out;
+  &.btn-warning{
+    color: $black;
+    background: $gold;
+    &:hover{
+      background: #ecc948;
+    }
+  }
+  &.btn-outline-warning{
+    color: $gold;
+    border: 2px solid $gold;
+    &:hover{
+      color: #ecc948;
+      border-color: #ecc948;
+    }
+  }
+}
+
+
+///grid
+
+$lg : 1512px;
+$md : 960px;
+$sm : 768px;
+$xs : 360px;
+
+
+
+.container{
+  max-width: $lg;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+

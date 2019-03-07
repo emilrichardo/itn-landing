@@ -1,0 +1,168 @@
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+	.container{
+		.main{
+			ul{
+				display: none;
+			}
+			.content{
+			    width: inherit !important;
+			}
+		}
+	}
+	.home{
+		.content{
+			h3{
+				width: 100%;
+			}
+		}
+	}
+	.home3{
+		background-repeat: no-repeat;
+	    background-size: cover;
+		.container{
+			.main{
+				.content{
+					.steps{
+						@include col-ct;
+						article{
+						    width: inherit;
+						    margin: 2rem 0;
+						    height: inherit;
+						    .line-s{
+						    	.l-top{
+								    height: 5rem;
+						    	}
+						    	.l-main{
+									height: 12rem;
+						    	}
+						    }
+						    h2{
+						    	color:$gold;
+						    }
+						    h3{
+						    	color:$gray;
+						    }
+						    .btn{
+							    border-color: #d8b021;
+							    background: #d8b021;
+							    width: 10rem;
+						        color: $black;
+						        .btn-text{
+						        	display: inline-block;
+						        }
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+	.about-us{
+		.container{
+			.main{
+				.content{
+					.h3-about-us{
+						margin-top: 12rem;
+						width: inherit;
+					}
+				}
+			}
+		}
+	}
+	.products{
+		background-repeat: no-repeat;
+	    background-size: cover;
+		.container{
+			.main{
+				.c-product{
+					@include col-ct;
+					.product{
+						width: inherit;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 361px) {
+	body,html{
+		font-size: 12px;
+	}
+	nav{
+		padding: 3rem 15px;
+		img{
+			width: 80px;
+			height: 80px;
+		}
+		ul{
+			width: 16rem;
+		}
+	}
+	.home{
+		.container{
+			.main{
+				.content{
+					h1{
+						line-height: 1;
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+	}
+	.home3{
+		.container{
+			.main{
+				.content{
+					.steps{
+						article{
+							.line-s{
+								.l-top{
+									height: 7rem;
+								}
+								.l-main{
+								    height: 19rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dark-gradient{
+	    height: 15rem;
+	}
+	.products{
+		background-repeat: no-repeat;
+	    background-size: cover;
+		.container{
+			padding: 0 30px;
+			.main{
+				.c-product{
+					.product{
+						@include col-ct;
+						.icon-product{
+						    max-width: inherit;
+						    width: 9rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	footer{
+		@include col-ct;
+		img,.foot-nav,.payments,.suscribe{
+		    margin: 2rem 0;
+		}
+		.foot-nav{
+			li{
+				font-size: $fs5;
+			}
+		}
+	}
+}
