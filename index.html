@@ -17,7 +17,14 @@
 </head>
 <body>
 
-
+<!-- Preload -->
+<div class="preloader">
+    <span>
+        <div class="preloader-loader"></div>
+        <img src="assets/images/logo.svg">
+    </span>
+</div>
+<!-- /Preload -->
 	
 	
 	<nav id="navbar" onscroll="myFunction()">
@@ -287,6 +294,13 @@
 	  "stickyBarHeight": null
 	  
 	});
+</script>
+<script type="text/javascript">
+    //preloader
+    $(window).load(function () {
+        $('.status').delay(250).fadeOut('slow');
+        $('.preloader').delay(250).fadeOut('slow');
+    });
 </script>
 </body>
 </html>

@@ -9,6 +9,91 @@
     list-style: none;
 }
 
+
+
+/* ============================================== */
+/* PRELOADER */
+/* ============================================== */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:url("../images/home2.jpg") center top no-repeat!important;
+  -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  -o-background-size: cover!important;
+  background-size: cover!important;
+  z-index: 999999999999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.preloader span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.preloader span .preloader-loader {
+  position: absolute;
+  top:0;
+  left: 0;
+  border: 2px solid rgba($gold,0.1); /* Light grey */
+  border-top: 2px solid $gold; /* Color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-animation: spin 0.40s linear infinite;
+  -moz-animation: spin 0.40s linear infinite;
+  -o-animation: spin 0.40s linear infinite;
+  -ms-animation: spin 0.40s linear infinite;
+  animation: spin 0.40s linear infinite;
+}
+
+.preloader span{
+  width: 100px;
+  height: 100px;
+}
+
+.preloader span .preloader-loader{
+  width: 100px;
+  height: 100px;
+}
+
+.preloader span img{
+  width:65px;
+  height:65px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 480px){
+  .preloader span{
+    top: 40%;
+  }
+}
+
+
+
+
 html, body{
 	height: 100%;
 	font-size: 14px;
