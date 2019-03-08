@@ -251,6 +251,22 @@ body{
 	}
 }
 
+ul.nav-fixed{
+	padding-left: 35px;
+	position: fixed;
+	z-index: 150;
+
+	li.active{
+		@include scale(1.1);
+		@include trans-all(.3s);
+		a{
+			color: $gold!important;
+
+		}
+	}
+
+}
+
 nav{
 	width: 100%;
     @include row-bt;

@@ -115,10 +115,10 @@
 
             var menuStyles = {
                 "stickyStyle": {
-                    "position": "fixed",
-                    "top": options.menuTop,
-                    "width": "100%",
-                    "z-index": 9999
+                    //"position": "fixed",
+                    //"top": options.menuTop,
+                    //"width": "100%",
+                    //"z-index": 9999
                 },
                 "originStyle": {
                     "position": $menu.css("position"),
@@ -131,7 +131,7 @@
                 //滚动距离超过菜单与文档顶部距离，则开始浮动
                 if (scrollTop > menuOffsetTop) {
                     $stickyBar.css(menuStyles.stickyStyle).addClass(options.stickyClass);
-                    $body.css("padding-top", stickyBarHeight);//菜单浮动后，设置body的padding-top为其高度
+                    //$body.css("padding-top", stickyBarHeight);//菜单浮动后，设置body的padding-top为其高度
                 }
                 else {
                     $stickyBar.css(menuStyles.originStyle).removeClass(options.stickyClass)
